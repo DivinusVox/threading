@@ -43,6 +43,5 @@ void* incrementCounter( void* m )
 		tempValue = tempValue + 1;
 		count = tempValue;
 	}
-
 	return NULL;
 }
