@@ -44,7 +44,6 @@ void main()
 void* incrementCounter( void* m )
 {
     int i;
-    printf("count begins at -> %d\n", count);
     for (i = 0; i < 10; ++i)
     {
         int tempValue = count;
@@ -53,6 +52,5 @@ void* incrementCounter( void* m )
 	printf("temp -> %d\n", tempValue);
         count = tempValue;
     }
-    printf("Going home\n");
     return NULL;
 }
