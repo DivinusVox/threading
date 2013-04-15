@@ -1,8 +1,8 @@
 parta:
-	process appears to become a zombie. I kind of though ttha tmight happen, but was suprised that we were told to do this without instructions on how to handle it
+	Process appears to become a zombie. I kind of thought that might happen, but was surprised that we were told to do this without instructions on how to handle it.
 partb:
-	Processes run simulatiously so really only the last process has any say on what happens.
+	Processes run simultaneously so really only the last process has any say on what happens.
 partc:
-	Without the wait threads finish fast enough you get the correct resulting count. This isn't garenteed but seems to work on my system.
+	Without the wait threads finish fast enough you get the correct resulting count. This isn't guaranteed but seems to work on my system.
 partd:
-	With mutex the process waitsd as it should to get things done. Returns the proper count.
+	With mutex the process waits as it should to get things done. Returns the proper count.
