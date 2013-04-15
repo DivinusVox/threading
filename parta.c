@@ -9,10 +9,12 @@ void main()
 	count = 0;
 
 	//start thread 1
+	//incrementCounter(&count);
 	//start thread 2
 	//start thread 3
 	//start thread 4
 
+	printf("%d\n", count);
 	//print count
 	//exit
 }
