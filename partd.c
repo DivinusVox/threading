@@ -13,6 +13,7 @@ pthread_mutex_t mutexLock;
 
 void main()
 {
+	pthread_mutex_init(&mutexLock, NULL); 
 	count = 0;
 	
 	pthread_t t1,t2,t3,t4;
@@ -37,7 +38,7 @@ void main()
 void* incrementCounter( void* m )
 {
 	int i;
-	pthread_mutex_init(&mutexLock); //lock here
+	pthread_mutex_lock(&mutexLock); //lock here
 	
 	for (i=0; i<10; i++)
 	{
