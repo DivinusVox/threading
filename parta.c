@@ -40,8 +40,8 @@ void* incrementCounter( void* m )
         int tempValue = count;
         sleep(1);
         tempValue = tempValue + 1;
+	printf("tempValue -> %d\n", tempValue);
         count = tempValue;
     }
- 
     return NULL;
 }
